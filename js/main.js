@@ -10,7 +10,7 @@ const predictedTemperatureElements = document.querySelectorAll(".card-body small
 const errorElement = document.getElementById("incorrect");
 async function fetchWeatherData(cityName) {
   const apiKey = "eeb6609c2b0343e8ace132436240312";
-  const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=3&aqi=no&alerts=no`;
+  const apiUrl = `HTTPS://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=3&aqi=no&alerts=no`;
 
   try {
     const response = await fetch(apiUrl);
